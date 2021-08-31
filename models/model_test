@@ -1,0 +1,8 @@
+with dim_customer as (
+  
+  select 
+   first_name||' '|| last_name   name
+   from dbt.dbt_devjitkpi.customers
+
+)
+select name from dim_customer
